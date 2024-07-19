@@ -1,1 +1,5 @@
 # react-music-visualiser
+
+A simple React experiment that creates Visualisation from an audio source using the [WEB Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API).  This example draws a very typical Spectrum Analyser visualisation.  Once you have access to the frequency data you could render any visualisation you wish.
+
+The experiment makes use of an [AnalyserNode](https://developer.mozilla.org/en-US/docs/Web/API/AnalyserNode) object to set the [Fast Fourier transform](https://en.wikipedia.org/wiki/Fast_Fourier_transform) window size - 256 in this case.  This size will dictate how many elements will be returned when the `getByteFrequencyData` method is called.  Each element in the array represents an audio frequency (Hz) band and its decibel value (0-255).  A HTML Canvas is then used to plot each frequencies value onto the screen as the audio plays. 
