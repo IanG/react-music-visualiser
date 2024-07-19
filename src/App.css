@@ -1,0 +1,21 @@
+div.controls {
+    position:absolute;
+    padding: 10px;
+    left: 10px;
+    top: 10px;
+    height: 54px;
+    line-height: 54px;
+    border-radius: 10px;
+    background-color: rgba(57, 57, 57 , 0.4);
+    color: white;
+    z-index: 10;
+    vertical-align: middle;
+    display: flex;
+}
+
+div.player {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+}
